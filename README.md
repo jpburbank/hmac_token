@@ -50,3 +50,5 @@ As required by HMAC, there is a secret key. For lack of a better place, I have p
 
 ## Source Control & Files
 Git has been used for soure control for this application. If you wish to see its progressions, you will find it at, https://github.com/jpburbank/hmac_token. It is currently a public branch, as I don't know who will be looking at it. I'm sure you do not want an Uplight interview assignment up for people to see, and so I will be setting it to a private repo after tomorrow's (June 10) interviews. Of course, If anyone wishes for it to be private immediately, please send me an email at jpburbank@gmail.com
+
+The Git meta files will be stripped from tarred and gzipped submission.
