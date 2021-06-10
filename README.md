@@ -20,7 +20,10 @@ Once Poetry is installed, the dependencies will be resolved by issuing the follo
 If you are not familiar with Poetry and are curious about where the dependencies are defind, you will find them in 
 > pyproject.toml
  
-To run the server, issue the following command, at the root of app, on the command line
+To make sure you are running with the correct Python and dependencies, issue the following command
+> poetry shell
+
+To run the server, issue the following command
 >uvicorn main:app
 
 The ASGI server, uvicorn should be installed by the prior command to load dependencies. If this is successful, a server will be running on http://127.0.0.1:8000
