@@ -1,12 +1,15 @@
 from typing import Any, Dict, List, Iterable
+from dotenv import dotenv_values
 import hmac
 from hashlib import sha1
 from hmac import HMAC
 
 
 CHAR_ENCODING = "utf-8"
-secret = "this is a secret key that should be moved to secrets file"
-secret_key = secret.encode(encoding=CHAR_ENCODING)
+config = dotenv_values(".env")
+# This should be a killer if the server can not find the secret
+print(config["secret"])
+secret_key = config["secret"].encode(encoding=CHAR_ENCODING)
 
 
 def generate_digest(request: Dict[str, Any]) -> str:
