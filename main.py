@@ -9,6 +9,5 @@ app = FastAPI()
 @app.post("/")
 async def process(request: Dict[Any, Any]):
     LABEL_SIGNATURE = "signature"
-    signature = generate_digest(request)
-    request[LABEL_SIGNATURE] = signature
+    request[LABEL_SIGNATURE] = generate_digest(request)
     return request
