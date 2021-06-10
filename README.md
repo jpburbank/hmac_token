@@ -1,5 +1,9 @@
 # Uplight Technical Assessment
 
+## Author
+Johnpaul Burbank
+
+jpburbank@gmail.com
 ## Summary
 
 The following is my submission for the assigned problem of creating an endpoint to append a HMAC token to a request body. The specifics of the assigment can be found in the file that was given to me
