@@ -5,10 +5,10 @@ from hmac_token.generate import generate_digest
 
 app = FastAPI()
 
+
 @app.post("/")
 async def process(request: Dict[Any, Any]):
-    LABEL_SIGNATURE = 'signature'
+    LABEL_SIGNATURE = "signature"
     signature = generate_digest(request)
-    print(type, signature)
     request[LABEL_SIGNATURE] = signature
     return request
